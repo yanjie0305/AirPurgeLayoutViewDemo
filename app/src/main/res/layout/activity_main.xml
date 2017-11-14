@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.edaibu.airpurgelayoutviewdemo.MainActivity">
+
+    <com.wx.airpurgeview.AirPurgeLayoutView
+        android:id="@+id/airpurge_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:toptitle="PM2.5"
+        app:centertitle="521"
+        app:bottomtitle="空气优"
+        />
+
+
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="净化空气"
+        android:layout_below="@+id/airpurge_view"
+        android:layout_centerHorizontal="true"
+         />
+
+</RelativeLayout>
